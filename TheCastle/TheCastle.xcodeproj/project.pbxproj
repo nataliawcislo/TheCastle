@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		7F9084EE236B76C300AEB3F8 /* TheCastleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9084ED236B76C300AEB3F8 /* TheCastleTests.swift */; };
 		7F9084F9236B76C300AEB3F8 /* TheCastleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9084F8236B76C300AEB3F8 /* TheCastleUITests.swift */; };
 		7F908507236B771800AEB3F8 /* CastleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F908506236B771800AEB3F8 /* CastleTableViewController.swift */; };
+		7FDEA591236BB9DD00466140 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDEA590236BB9DD00466140 /* HomeViewController.swift */; };
+		7FDEA593236BC31E00466140 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDEA592236BC31E00466140 /* PhotoViewController.swift */; };
+		7FDEA596236C54F400466140 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7FDEA595236C54F400466140 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 		7F9084D3236B76C100AEB3F8 /* TheCastle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCastle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9084D6236B76C100AEB3F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9084DD236B76C100AEB3F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F9084DF236B76C300AEB3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F9084DF236B76C300AEB3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TheCastle/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		7F9084E2236B76C300AEB3F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F9084E4236B76C300AEB3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F9084E9236B76C300AEB3F8 /* TheCastleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheCastleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,8 @@
 		7F9084F8236B76C300AEB3F8 /* TheCastleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCastleUITests.swift; sourceTree = "<group>"; };
 		7F9084FA236B76C300AEB3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F908506236B771800AEB3F8 /* CastleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleTableViewController.swift; sourceTree = "<group>"; };
+		7FDEA590236BB9DD00466140 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7FDEA592236BC31E00466140 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDEA596236C54F400466140 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,8 @@
 				7F9084E1236B76C300AEB3F8 /* LaunchScreen.storyboard */,
 				7F9084E4236B76C300AEB3F8 /* Info.plist */,
 				7F908506236B771800AEB3F8 /* CastleTableViewController.swift */,
+				7FDEA590236BB9DD00466140 /* HomeViewController.swift */,
+				7FDEA592236BC31E00466140 /* PhotoViewController.swift */,
 			);
 			path = TheCastle;
 			sourceTree = "<group>";
@@ -141,6 +149,9 @@
 			dependencies = (
 			);
 			name = TheCastle;
+			packageProductDependencies = (
+				7FDEA595236C54F400466140 /* Lottie */,
+			);
 			productName = TheCastle;
 			productReference = 7F9084D3236B76C100AEB3F8 /* TheCastle.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 7F9084CA236B76C100AEB3F8;
+			packageReferences = (
+				7FDEA594236C54F300466140 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 7F9084D4236B76C100AEB3F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F908507236B771800AEB3F8 /* CastleTableViewController.swift in Sources */,
+				7FDEA593236BC31E00466140 /* PhotoViewController.swift in Sources */,
 				7F9084D7236B76C100AEB3F8 /* AppDelegate.swift in Sources */,
+				7FDEA591236BB9DD00466140 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FDEA594236C54F300466140 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FDEA595236C54F400466140 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FDEA594236C54F300466140 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F9084CB236B76C100AEB3F8 /* Project object */;
 }

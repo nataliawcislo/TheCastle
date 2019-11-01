@@ -9,7 +9,7 @@
 import UIKit
 
 class CastleTableViewController: UITableViewController {
-    let castles = ["Austrian", "Colorodo", "England", "France", "Ireland", "Italy", "Japan", "Massachusetts", "New York", "Prauge", "Slovakia", "United Kingdom"]
+    let castles = ["Austrian" ,"Colorodo", "England", "France", "Ireland", "Italy", "Japan", "Massachusetts", "New York", "Prauge", "Slovakia", "United Kingdom"]
     
     var castlesDict = [String: [String]]()
     var castleSectionTitles = [String]()
@@ -63,7 +63,6 @@ class CastleTableViewController: UITableViewController {
             let imageFilename = castleValues[indexPath.row].lowercased().replacingOccurrences(of: " ", with: "_")
             cell.imageView?.image = UIImage(named: imageFilename)
         }
-        
         return cell
     }
 
